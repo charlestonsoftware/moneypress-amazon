@@ -47,7 +47,10 @@ function csl_mpamz_setup_admin_interface() {
     global $mpamz_plugin;
     
     // Don't have what we need? Leave.
-    if (!isset($mpamz_plugin)) { return; }
+    if (!isset($mpamz_plugin)) {
+        print 'no base class instantiated<br/>';
+        return; 
+    }
 
     // Already been here?  Get out.
     if (isset($mpamz_plugin->settings->sections['How to Use'])) { return; }
@@ -56,7 +59,7 @@ function csl_mpamz_setup_admin_interface() {
     //-------------------------
     // How to Use Section
     //-------------------------    
-    $slplus_plugin->settings->add_section(
+    $mpamz_plugin->settings->add_section(
         array(
             'name' => 'How to Use',
             'description' => get_string_from_phpexec(MPAMZ_PLUGINDIR.'/how_to_use.txt')
@@ -66,7 +69,7 @@ function csl_mpamz_setup_admin_interface() {
     //-------------------------
     // General Settings
     //-------------------------    
-    $slplus_plugin->settings->add_section(
+    $mpamz_plugin->settings->add_section(
         array(
             'name'        => 'Amazon Settings',
             'description' => 'These settings affect how we talk to Amazon.'.
@@ -74,7 +77,7 @@ function csl_mpamz_setup_admin_interface() {
         )
     );
     
-    $slplus_plugin->settings->add_item(
+    $mpamz_plugin->settings->add_item(
         'Amazon Settings', 
         'Amazon API Key', 
         'api_key', 
