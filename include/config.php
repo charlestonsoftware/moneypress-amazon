@@ -30,7 +30,7 @@ if (defined('MPAMZ_PLUGINDIR')) {
             'plugin_path'           => MPAMZ_PLUGINDIR,
             'plugin_url'            => MPAMZ_PLUGINURL,
             'cache_path'            => MPAMZ_PLUGINDIR . 'cache',
-            'driver_type'           => 'Panhanlder',
+            'driver_type'           => 'Panhandler',
             'driver_args'           => array(
                     'api_key'   => get_option($prefix.'-api_key'),
                     )
