@@ -14,6 +14,8 @@ Put Amazon product listings on your posts and pages using a simple short code.  
 This plugin creates product listings directly from the Amazon product feed by using a simple short code.
 Adds content and creates a revenue source for your site our blog with minimal effort.
 
+Note: This is a premium plugin.   See the FAQ for details about our license.
+
 = Features =
 
 * List products from any Amazon Category
