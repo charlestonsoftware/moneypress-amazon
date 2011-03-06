@@ -81,7 +81,7 @@ function csl_mpamz_setup_admin_interface() {
         'Secret Access Key', 
         'secret_access_key', 
         'text', 
-        false,
+        true,
         'Your Amazon Secret Access Key.  You will need to ' .
         '<a href="https://affiliate-program.amazon.com/">'.
         'go to Amazon</a> to get your Key.'
