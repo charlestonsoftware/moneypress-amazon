@@ -19,6 +19,7 @@ Note: This is a premium plugin.   See the FAQ for details about our license.
 = Features =
 
 * List products from any Amazon Category
+* Connect to Amazon sites in US, UK, Canada, Denmark, France, and Japan
 
 = Looking For Customized WordPress Plugins? =
 

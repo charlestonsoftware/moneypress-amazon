@@ -15,14 +15,11 @@ if (defined('MPAMZ_PLUGINDIR')) {
     
     /**
      * This section defines the settings for the admin menu.
-     */
-    
-    $prefix = 'mpamz';
-    
+     */       
     $mpamz_plugin = new wpCSL_plugin__mpamz(
         array(
             'use_obj_defaults'      => true,        
-            'prefix'                => $prefix,
+            'prefix'                => MPAMZ_PREFIX,
             'name'                  => 'MoneyPress : Amazon Edition',
             'url'                   => 'http://www.cybersprocket.com/products/moneypress-amazon/',
             'paypal_button_id'      => 'LUJK7AZN7MRDJ',
@@ -30,10 +27,12 @@ if (defined('MPAMZ_PLUGINDIR')) {
             'plugin_path'           => MPAMZ_PLUGINDIR,
             'plugin_url'            => MPAMZ_PLUGINURL,
             'cache_path'            => MPAMZ_PLUGINDIR . 'cache',
+            'driver_name'           => 'Amazon',
             'driver_type'           => 'Panhandler',
             'driver_args'           => array(
-                    'api_key'   => get_option($prefix.'-api_key'),
-                    )
+                    'secret_access_key'   => get_option(MPAMZ_PREFIX.'-secret_access_key'),
+                    ),
+            'shortcodes'            => array('mp-amz','MP-AMZ','mp-amazon')
         )
     );    
 }    
@@ -79,14 +78,31 @@ function csl_mpamz_setup_admin_interface() {
     
     $mpamz_plugin->settings->add_item(
         'Amazon Settings', 
-        'Amazon API Key', 
-        'api_key', 
+        'Secret Access Key', 
+        'secret_access_key', 
         'text', 
         false,
-        'Your Amazon API Key.  You will need to ' .
+        'Your Amazon Secret Access Key.  You will need to ' .
         '<a href="https://affiliate-program.amazon.com/">'.
-        'go to Amazon</a> to get your API Key.'
+        'go to Amazon</a> to get your Key.'
     );
     
+
+    $section    = __('Amazon Settings', MPAMZ_PREFIX);    
+    $label      = __('Amazon Site',MPAMZ_PREFIX);
+    $hint       = __('Select the Amazon site to pull data from.',MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'amazon_site', 'list', false, 
+        $hint,
+        array(
+            'United States' =>  'ecs.amazonaws.com',
+            'Canada'        =>  'ecs.amazonaws.ca',
+            'Denmark'       =>  'ecs.amazonaws.de',
+            'France'        =>  'ecs.amazonaws.fr',
+            'Japan'         =>  'ecs.amazonaws.jp',
+            'United Kingdom'=>  'ecs.amazonaws.co.uk',
+            )
+    );    
 }
 

@@ -40,11 +40,15 @@ if (defined('MPAMZ_BASENAME') === false) {
     define('MPAMZ_BASENAME', plugin_basename(__FILE__));
 }
 
+if (defined('MPAMZ_PREFIX') === false) {
+    define('MPAMZ_PREFIX', 'mpamz');
+}
+
 include_once(MPAMZ_PLUGINDIR.'/include/config.php');
 
 add_action('admin_init','csl_mpamz_setup_admin_interface',10);
 
-load_plugin_textdomain('mpamz', false, MPAMZ_PLUGINDIR . '/languages/');
+load_plugin_textdomain(MPAMZ_PREFIX, false, MPAMZ_PLUGINDIR . '/languages/');
 
 
 
