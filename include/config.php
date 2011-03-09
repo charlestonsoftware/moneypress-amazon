@@ -31,6 +31,7 @@ if (defined('MPAMZ_PLUGINDIR')) {
             'driver_type'           => 'Panhandler',
             'driver_args'           => array(
                     'secret_access_key'   => get_option(MPAMZ_PREFIX.'-secret_access_key'),
+                    'wait_for'            => get_option(MPAMZ_PREFIX.'-wait_for'),
                     ),
             'shortcodes'            => array('mp-amz','MP-AMZ','mp-amazon')
         )
@@ -66,29 +67,31 @@ function csl_mpamz_setup_admin_interface() {
     );
 
     //-------------------------
-    // General Settings
+    // Amazon Settings Section
     //-------------------------    
+    $section    = __('Amazon Settings', MPAMZ_PREFIX);
+    
     $mpamz_plugin->settings->add_section(
         array(
-            'name'        => 'Amazon Settings',
+            'name'        => $section,
             'description' => 'These settings affect how we talk to Amazon.'.
                                 '<br/><br/>'
         )
     );
     
-    $mpamz_plugin->settings->add_item(
-        'Amazon Settings', 
-        'Secret Access Key', 
-        'secret_access_key', 
-        'text', 
-        true,
+    $label      = __('Secret Access Key',MPAMZ_PREFIX);
+    $hint       = __(
         'Your Amazon Secret Access Key.  You will need to ' .
         '<a href="https://affiliate-program.amazon.com/">'.
-        'go to Amazon</a> to get your Key.'
+        'go to Amazon</a> to get your Key.',                
+        MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'secret_access_key','text',true,
+        $hint
     );
     
 
-    $section    = __('Amazon Settings', MPAMZ_PREFIX);    
     $label      = __('Amazon Site',MPAMZ_PREFIX);
     $hint       = __('Select the Amazon site to pull data from.',MPAMZ_PREFIX);
     $mpamz_plugin->settings->add_item(
@@ -103,6 +106,15 @@ function csl_mpamz_setup_admin_interface() {
             'Japan'         =>  'ecs.amazonaws.jp',
             'United Kingdom'=>  'ecs.amazonaws.co.uk',
             )
+    );
+    
+    $label      = __('Request Timeout',MPAMZ_PREFIX);
+    $hint       = __('How long, in seconds, do we wait to hear back from Amazon. (default:30)',MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'wait_for', 'text', false, 
+        $hint
     );    
+    
 }
 
