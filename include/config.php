@@ -32,6 +32,9 @@ if (defined('MPAMZ_PLUGINDIR')) {
             'driver_args'           => array(
                     'secret_access_key'   => get_option(MPAMZ_PREFIX.'-secret_access_key'),
                     'wait_for'            => get_option(MPAMZ_PREFIX.'-wait_for'),
+                    'AWSAccessKeyId'      => get_option(MPAMZ_PREFIX.'-AWSAccessKeyId'),
+                    'associatetag'        => get_option(MPAMZ_PREFIX.'-AssociateTag'),
+                    'searchindex'         => get_option(MPAMZ_PREFIX.'-SearchIndex'),
                     ),
             'shortcodes'            => array('mp-amz','MP-AMZ','mp-amazon')
         )
@@ -54,17 +57,6 @@ function csl_mpamz_setup_admin_interface() {
 
     // Already been here?  Get out.
     if (isset($mpamz_plugin->settings->sections['How to Use'])) { return; }
-    
-    
-    //-------------------------
-    // How to Use Section
-    //-------------------------    
-    $mpamz_plugin->settings->add_section(
-        array(
-            'name' => 'How to Use',
-            'description' => get_string_from_phpexec(MPAMZ_PLUGINDIR.'/how_to_use.txt')
-        )
-    );
 
     //-------------------------
     // Amazon Settings Section
@@ -90,8 +82,32 @@ function csl_mpamz_setup_admin_interface() {
         'secret_access_key','text',true,
         $hint
     );
-    
 
+    
+    $label      = __('AWS Access Key ID',MPAMZ_PREFIX);
+    $hint       = __(
+        'Your Amazon Web Services Access Key ID. '.
+        'This is different than the secret key.  You will need to ' .
+        '<a href="https://affiliate-program.amazon.com/">'.
+        'go to Amazon</a> to get your AWS Access Key.',                
+        MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'AWSAccessKeyId','text',true,
+        $hint
+    );    
+    
+    $label      = __('Associate Tag',MPAMZ_PREFIX);
+    $hint       = __('Your Amazon Associates site tag.  '.
+        'Enter the 10 letter+2-digit associate tag Amazon gave to your '.
+        'site so you can earn credit for sales.',MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'AssociateTag', 'text', false, 
+        $hint
+    );
+        
+    
     $label      = __('Amazon Site',MPAMZ_PREFIX);
     $hint       = __('Select the Amazon site to pull data from.',MPAMZ_PREFIX);
     $mpamz_plugin->settings->add_item(
@@ -107,6 +123,61 @@ function csl_mpamz_setup_admin_interface() {
             'United Kingdom'=>  'ecs.amazonaws.co.uk',
             )
     );
+    
+            
+    $label      = __('Default Search Index',MPAMZ_PREFIX);
+    $hint       = __('Which Amazon Search Index do you want to use?',MPAMZ_PREFIX);
+    $mpamz_plugin->settings->add_item(
+        $section,$label, 
+        'SearchIndex', 'list', false,
+        $hint,
+        array(
+            'All' => 'All',
+            'Apparel' => 'Apparel',
+            'Automotive' => 'Automotive',
+            'Baby' => 'Baby',
+            'Beauty' => 'Beauty',
+            'Blended' => 'Blended',
+            'Books' => 'Books',
+            'Classical' => 'Classical',
+            'DigitalMusic' => 'DigitalMusic',
+            'DVD' => 'DVD',
+            'Electronics' => 'Electronics',
+            'ForeignBooks' => 'ForeignBooks',
+            'GourmetFood' => 'GourmetFood',
+            'Grocery' => 'Grocery',
+            'HealthPersonalCare' => 'HealthPersonalCare',
+            'Hobbies' => 'Hobbies',
+            'HomeGarden' => 'HomeGarden',
+            'Industrial' => 'Industrial',
+            'Jewelry' => 'Jewelry',
+            'KindleStore' => 'KindleStore',
+            'Kitchen' => 'Kitchen',
+            'Magazines' => 'Magazines',
+            'Merchants' => 'Merchants',
+            'Miscellaneous' => 'Miscellaneous',
+            'MP3Downloads' => 'MP3Downloads',
+            'Music' => 'Music',
+            'MusicalInstruments' => 'MusicalInstruments',
+            'MusicTracks' => 'MusicTracks',
+            'OfficeProducts' => 'OfficeProducts',
+            'OutdoorLiving' => 'OutdoorLiving',
+            'PCHardware' => 'PCHardware',
+            'PetSupplies' => 'PetSupplies',
+            'Photo' => 'Photo',
+            'Software' => 'Software',
+            'SoftwareVideoGames' => 'SoftwareVideoGames',
+            'SportingGoods' => 'SportingGoods',
+            'Tools' => 'Tools',
+            'Toys' => 'Toys',
+            'VHS' => 'VHS',
+            'Video' => 'Video',
+            'VideoGames' => 'VideoGames',
+            'Watches' => 'Watches',
+            'Wireless' => 'Wireless',
+            'WirelessAccessories' => 'WirelessAccessories'
+        )
+    );        
     
     $label      = __('Request Timeout',MPAMZ_PREFIX);
     $hint       = __('How long, in seconds, do we wait to hear back from Amazon. (default:30)',MPAMZ_PREFIX);
