@@ -50,6 +50,21 @@ add_action('admin_init','csl_mpamz_setup_admin_interface',10);
 
 load_plugin_textdomain(MPAMZ_PREFIX, false, MPAMZ_PLUGINDIR . '/languages/');
 
+add_action('wp_print_styles', 'add_mpamz_css');
+
+//// FUNCTIONS ///////////////////////////////////////////////////////
+
+/**
+ * Adds our user CSS to the page.
+ */
+function add_mpamz_css() {
+    $myStyleUrl  = MPAMZ_PLUGINURL . '/css/'.MPAMZ_PREFIX.'_style.css';
+    $myStyleFile = MPAMZ_PLUGINDIR . '/css/'.MPAMZ_PREFIX.'_style.css';
+    if ( file_exists($myStyleFile) ) {
+    wp_register_style(MPAMZ_PREFIX.'_css', $myStyleUrl);
+    wp_enqueue_style( MPAMZ_PREFIX.'_css');
+    }
+}
 
 
 
