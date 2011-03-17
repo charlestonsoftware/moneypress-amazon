@@ -58,6 +58,30 @@ Learn more at: http://www.cybersprocket.com/services/wordpress-developers/
 
 It helps us support the product and provide regular updates.
 
+= What type of support do I get? =
+
+Cyber Sprocket Labs provides online forums where you can post questions.  The
+developers read the forums on a regular basis.   Most inquiries are responded
+to within 7 days.
+
+WordPress plugins are a fun way to share our work with the community, but it is 
+not our main revenue stream.  Please be patient when looking for responses from 
+our dev team.   We want everyone to enjoy using our products, but we must attend 
+to the projects that pay the rent first.  Low cost plugins are fun, and we do 
+want to support them but it can take a week or more to address any issues you
+may be having.
+
+= Will you customize the plugin for me? =
+
+If you want a modification and need it in a hurry, contact us for a quote on
+getting this done.  Any work we can re-use and share with the communinty as
+part of main plugin can usually be completed in a few weeks.  We charge $60/hr
+for this work with most projects running 6-10 hours.    If you want a private
+modification we charge $120 for the work.
+
+You can also suggest features or modificaitons in the forum.  We try to release
+new features every few months and get most of our ideas from the forums.
+
 = Are there any other fees? =
 
 No, just the initial license fee.  Upgrades are free.  
@@ -68,6 +92,14 @@ The license is based on GPL.  You get the code, feel free to modify it as you
 wish.  We prefer that our customers pay us because they like what we do and 
 want to support our efforts to bring useful software to market.  Learn more
 on our [CSL License Terms page](http://redmine.cybersprocket.com/projects/commercial-products/wiki/Cyber_Sprocket_Labs_Licensing_Terms "CSL License Terms page").
+
+= Who Is Cyber Sprocket Labs? =
+
+Cyber Sprocket Labs is a software consulting firm.  We develop custom complex
+web applications, mobile applications, and desktop applications for our clients.
+If you are looking for help developing and deploying your application, contact
+us for a quote.  Our rates start at $80/hr for long term engagements of 6 months
+or more and $120/hr for short term projects.
 
 = How can i translate the plugin into my language? =
 
