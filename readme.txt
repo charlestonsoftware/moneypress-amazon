@@ -112,6 +112,9 @@ or more and $120/hr for short term projects.
 == Screenshots ==
 
 1. Admin Menus
+2. Edit Page Shortcode
+3. Product Details Display
+
 
 == Changelog ==
 
