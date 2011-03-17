@@ -32,7 +32,7 @@ Learn more at: http://www.cybersprocket.com/services/wordpress-developers/
 
 = Related Links =
 
-* [MoneyPress Amazon Edition Product Info](http://redmine.cybersprocket.com/products/moneypress-amazon-edition/)
+* [MoneyPress Amazon Edition Product Info](http://www.cybersprocket.com/products/moneypress-amazon-edition/)
 * [MoneyPress Amazon Edition Support Pages](http://redmine.cybersprocket.com/projects/mp-amazon/wiki)
 * [Other Cyber Sprocket Plugins](http://wordpress.org/extend/plugins/profile/cybersprocket/) 
 * [Custom WordPress Development](http://www.cybersprocket.com/services/wordpress-developers/)
