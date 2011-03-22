@@ -5,7 +5,7 @@ Donate link: http://www.cybersprocket.com/products/moneypress-amazon-edition/
 Tags: amazon, store, products, ecommerce, affiliate program, affiliates
 Requires at least: 3.0
 Tested up to: 3.0.5
-Stable tag: 0.1
+Stable tag: 0.2
 
 Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.    
 
@@ -117,6 +117,10 @@ or more and $120/hr for short term projects.
 
 
 == Changelog ==
+
+= 0.2  (April 2011) =
+
+* Added author name to main plugin file.
 
 = 0.1  (February 2011) =
 

@@ -4,7 +4,8 @@ Plugin Name: MoneyPress Amazon Edition
 Plugin URI: http://www.cybersprocket.com/products/moneypress-amazon/
 Description: Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.     
 Version: 0.1
-http://www.cybersprocket.com
+Author: Cyber Sprocket Labs
+Author URI: http://www.cybersprocket.com
 License: GPL3
 
 =====================
