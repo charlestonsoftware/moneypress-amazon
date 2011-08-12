@@ -21,6 +21,17 @@ Note: This is a premium plugin.   See the FAQ for details about our license.
 * List products from any Amazon Category
 * Connect to Amazon sites in US, UK, Canada, Denmark, France, and Japan
 
+= Standard Edition Features =
+
+[MoneyPress Amazon Edition](http://www.cybersprocket.com/products/moneypress-amazon/) has additional features. 
+
+Some of the features in the standard edition that are not found in the LE version include:
+
+* [Theme System](http://redmine.cybersprocket.com/projects/mp-amazon/wiki/Themes) : Use one of our basic themes including multi-column output or easily create and add your own.
+* [More Settings](http://redmine.cybersprocket.com/projects/mp-amazon/wiki/Setttings) : More settings for better listing control.
+* Bug Fixes: Latest bug fixes come out on the standard edition first, LE is 2-4 weeks behind.
+
+
 = Looking For Customized WordPress Plugins? =
 
 If you are looking for custom WordPress development for your own plugins, give 
