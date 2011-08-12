@@ -40,8 +40,8 @@ if (defined('MP_AMZ_ICONDIR') === false) {
 
 // URL Defines
 //
-if (defined('MPAMZ_PLUGINURL') === false) {
-    define('MPAMZ_PLUGINURL', plugins_url('',__FILE__));
+if (defined('MP_AMZ_PLUGINDIR') === false) {
+    define('MP_AMZ_PLUGINDIR', plugins_url('',__FILE__));
 }
 if (defined('MP_AMZ_COREURL') === false) {
     define('MP_AMZ_COREURL', MP_AMZ_PLUGINURL . '/core/');

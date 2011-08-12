@@ -8,7 +8,7 @@
  */
 if (defined('MP_AMZ_PLUGINDIR')) {
     if (class_exists('wpCSL_plugin__mpamz') === false) {
-        require_once(MPAMZ_PLUGINDIR.'WPCSL-generic/classes/CSL-plugin.php');
+        require_once(MP_AMZ_PLUGINDIR.'WPCSL-generic/classes/CSL-plugin.php');
     }
 
     global $MP_amz_plugin;
