@@ -40,8 +40,8 @@ if (defined('MP_AMZ_ICONDIR') === false) {
 
 // URL Defines
 //
-if (defined('MP_AMZ_PLUGINDIR') === false) {
-    define('MP_AMZ_PLUGINDIR', plugins_url('',__FILE__));
+if (defined('MP_AMZ_PLUGINURL') === false) {
+    define('MP_AMZ_PLUGINURL', plugins_url('',__FILE__));
 }
 if (defined('MP_AMZ_COREURL') === false) {
     define('MP_AMZ_COREURL', MP_AMZ_PLUGINURL . '/core/');
@@ -60,7 +60,7 @@ if (defined('MP_AMZ_BASENAME') === false) {
 // Our product prefix
 //
 if (defined('MP_AMZ_PREFIX') === false) {
-    define('MP_AMZ_PREFIX', 'csl-mp-amz');
+    define('MP_AMZ_PREFIX', 'mpamz');
 }
 
 
