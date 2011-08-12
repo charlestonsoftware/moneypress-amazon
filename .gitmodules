@@ -4,3 +4,6 @@
 [submodule "Panhandler"]
 	path = Panhandler
 	url = ssh://git@cybersprocket.com/home/lobbrary/repos/modules/Panhandler.git
+[submodule "core"]
+	path = core
+	url = ./core
