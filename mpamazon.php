@@ -26,44 +26,70 @@ License: GPL3
 
 **/
 
-
-// Define our paths 
+// Drive Path Defines 
 //
-if (defined('MPAMZ_PLUGINDIR') === false) {
-    define('MPAMZ_PLUGINDIR', plugin_dir_path(__FILE__));
+if (defined('MP_AMZ_PLUGINDIR') === false) {
+    define('MP_AMZ_PLUGINDIR', plugin_dir_path(__FILE__));
 }
+if (defined('MP_AMZ_COREDIR') === false) {
+    define('MP_AMZ_COREDIR', MP_AMZ_PLUGINDIR . 'core/');
+}
+if (defined('MP_AMZ_ICONDIR') === false) {
+    define('MP_AMZ_ICONDIR', MP_AMZ_COREDIR . 'images/icons/');
+}
+
+// URL Defines
+//
 if (defined('MPAMZ_PLUGINURL') === false) {
     define('MPAMZ_PLUGINURL', plugins_url('',__FILE__));
 }
-if (defined('MPAMZ_BASENAME') === false) {
-    define('MPAMZ_BASENAME', plugin_basename(__FILE__));
+if (defined('MP_AMZ_COREURL') === false) {
+    define('MP_AMZ_COREURL', MP_AMZ_PLUGINURL . '/core/');
+}
+if (defined('MP_AMZ_ICONURL') === false) {
+    define('MP_AMZ_ICONURL', MP_AMZ_COREURL . 'images/icons/');
 }
 
-if (defined('MPAMZ_PREFIX') === false) {
-    define('MPAMZ_PREFIX', 'mpamz');
+// The relative path from the plugins directory
+//
+if (defined('MP_AMZ_BASENAME') === false) {
+    define('MP_AMZ_BASENAME', plugin_basename(__FILE__));
 }
 
-include_once(MPAMZ_PLUGINDIR.'/include/config.php');
 
-add_action('admin_init','csl_mpamz_setup_admin_interface',10);
+// Our product prefix
+//
+if (defined('MP_AMZ_PREFIX') === false) {
+    define('MP_AMZ_PREFIX', 'csl-mp-amz');
+}
 
-load_plugin_textdomain(MPAMZ_PREFIX, false, MPAMZ_PLUGINDIR . '/languages/');
 
-add_action('wp_print_styles', 'add_mpamz_css');
-
-//// FUNCTIONS ///////////////////////////////////////////////////////
-
-/**
- * Adds our user CSS to the page.
- */
-function add_mpamz_css() {
-    $myStyleUrl  = MPAMZ_PLUGINURL . '/css/'.MPAMZ_PREFIX.'_style.css';
-    $myStyleFile = MPAMZ_PLUGINDIR . '/css/'.MPAMZ_PREFIX.'_style.css';
-    if ( file_exists($myStyleFile) ) {
-    wp_register_style(MPAMZ_PREFIX.'_css', $myStyleUrl);
-    wp_enqueue_style( MPAMZ_PREFIX.'_css');
+// Include our needed files
+//
+include_once(MP_AMZ_PLUGINDIR.'/include/config.php');
+include_once(MP_AMZ_PLUGINDIR . 'plus.php'   );
+include_once(MP_AMZ_COREDIR   . 'csl_helpers.php'       );
+if (class_exists('PanhandlerProduct') === false) {
+    try {
+        require_once('Panhandler/Panhandler.php');
+    }
+    catch (PanhandlerMissingRequirement $exception) {
+        add_action('admin_notices', array($exception, 'getMessage'));
+        exit(1);
+    }
+}
+if (class_exists('CafePressPanhandler') === false) {
+    try {
+        require_once('Panhandler/Drivers/Amazon.php');
+    }
+    catch (PanhandlerMissingRequirement $exception) {
+        add_action('admin_notices', array($exception, 'getMessage'));
+        exit(1);
     }
 }
 
+register_activation_hook( __FILE__, 'csl_mpamz_activate');
 
-
+add_action('wp_print_styles', 'csl_mpamz_user_stylesheet');
+add_action('admin_print_styles','csl_mpamz_admin_stylesheet');
+add_action('admin_init','csl_mpamz_setup_admin_interface',10);
