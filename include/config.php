@@ -34,7 +34,8 @@ if (defined('MP_AMZ_PLUGINDIR')) {
                     'associatetag'        => get_option(MP_AMZ_PREFIX.'-AssociateTag'),
                     'searchindex'         => get_option(MP_AMZ_PREFIX.'-SearchIndex'),
                     ),
-            'shortcodes'            => array('mp-amz','MP-AMZ','mp-amazon')
+            'shortcodes'            => array('mp-amz','MP-AMZ','mp-amazon'),
+            'themes_enabled'        => true            
         )
     );    
 }    
