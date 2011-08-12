@@ -1,11 +1,11 @@
-=== MoneyPress : Amazon Edition ===
+=== MoneyPress : Amazon Edition (PREMIUM) ===
 Plugin Name: MoneyPress Amazon Edition
 Contributors: cybersprocket
 Donate link: http://www.cybersprocket.com/products/moneypress-amazon-edition/
 Tags: amazon, store, products, ecommerce, affiliate program, affiliates
 Requires at least: 3.0
-Tested up to: 3.1.1
-Stable tag: 0.1
+Tested up to: 3.2.1
+Stable tag: 0.3
 
 Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.    
 
@@ -122,6 +122,11 @@ or more and $120/hr for short term projects.
 
 
 == Changelog ==
+
+= 0.3 (August 2011) =
+
+* Added theme files to PLUS version
+* Elminate errors on servers with exec() disabled on php.
 
 = 0.2  (April 2011) =
 
