@@ -10,16 +10,14 @@ if (defined('MPAMZ_PLUGINDIR')) {
     if (class_exists('wpCSL_plugin__mpamz') === false) {
         require_once(MPAMZ_PLUGINDIR.'WPCSL-generic/classes/CSL-plugin.php');
     }
-    
-    //// SETTINGS ////////////////////////////////////////////////////////
-    
-    /**
-     * This section defines the settings for the admin menu.
-     */       
+
+    global $mpamz_plugin;
+   
     $mpamz_plugin = new wpCSL_plugin__mpamz(
         array(
             'use_obj_defaults'      => true,        
             'prefix'                => MPAMZ_PREFIX,
+            'css_prefix'            => 'csl_themes',            
             'name'                  => 'MoneyPress : Amazon Edition',
             'url'                   => 'http://www.cybersprocket.com/products/moneypress-amazon/',
             'paypal_button_id'      => 'LUJK7AZN7MRDJ',
