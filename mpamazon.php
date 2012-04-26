@@ -1,28 +1,28 @@
 <?php
 /*
-Plugin Name: MoneyPress Amazon Edition (PREMIUM)
+Plugin Name: MoneyPress Amazon Edition
 Plugin URI: http://www.cybersprocket.com/products/moneypress-amazon/
 Description: Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.     
-Version: 0.3
+Version: 0.4
 Author: Cyber Sprocket Labs
 Author URI: http://www.cybersprocket.com
 License: GPL3
 
-	Copyright 2011 Cyber Sprocket Labs (info@cybersprocket.com)
+Copyright 2012 Cyber Sprocket Labs (info@cybersprocket.com)
 
-        This program is free software; you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation; either version 3 of the License, or
-        (at your option) any later version.
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
 
-        This program is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-        You should have received a copy of the GNU General Public License
-        along with this program; if not, write to the Free Software
-        Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 **/
 

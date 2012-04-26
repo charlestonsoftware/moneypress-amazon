@@ -1,11 +1,11 @@
-=== MoneyPress : Amazon Edition (PREMIUM) ===
+=== MoneyPress : Amazon Edition ===
 Plugin Name: MoneyPress Amazon Edition
 Contributors: cybersprocket
 Donate link: http://www.cybersprocket.com/products/moneypress-amazon-edition/
 Tags: amazon, store, products, ecommerce, affiliate program, affiliates
-Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 0.3
+Requires at least: 3.3
+Tested up to: 3.3.2
+Stable tag: 0.4
 
 Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.    
 
@@ -14,23 +14,30 @@ Put Amazon product listings on your posts and pages using a simple short code.  
 This plugin creates product listings directly from the Amazon product feed by using a simple short code.
 Adds content and creates a revenue source for your site our blog with minimal effort.
 
-Note: This is a premium plugin.   See the FAQ for details about our license.
-
 = Features =
 
 * List products from any Amazon Category
 * Connect to Amazon sites in US, UK, Canada, Germany, France, and Japan
 
-= Standard Edition Features =
+= Pro Pack Available =
 
-[MoneyPress Amazon Edition](http://www.cybersprocket.com/products/moneypress-amazon/) has additional features. 
+[MoneyPress Amazon Edition](http://www.cybersprocket.com/products/moneypress-amazon/) has a Pro Pack Add-On available that provides additional features including the ability to create custom CSS themes for the listings.  It is also a great way to help support future development.
 
-Some of the features in the standard edition that are not found in the LE version include:
+Some of the features in the Pro Pack Add-On that are not found in the LE version include:
 
 * [Theme System](http://redmine.cybersprocket.com/projects/mp-amazon/wiki/Themes) : Use one of our basic themes including multi-column output or easily create and add your own.
 * [More Settings](http://redmine.cybersprocket.com/projects/mp-amazon/wiki/Setttings) : More settings for better listing control.
-* Bug Fixes: Latest bug fixes come out on the standard edition first, LE is 2-4 weeks behind.
 
+
+= Upgrades =
+
+We will offer upgrade versions from time-to-time when special new features are added to the product.  
+If you do not purchase the upgrade you will still receive bug fixes and minor feature additions, however
+some of the newest features may not be available to you.   
+
+The main product will always remain fully functional and free.  If you'd like to have some of the latest
+"bells & whistles" purchasing the upgrades is a great way to help support us and encourage us to add even
+more items the next time around.
 
 = Looking For Customized WordPress Plugins? =
 
@@ -42,6 +49,7 @@ and costs.
 Learn more at: http://www.cybersprocket.com/services/wordpress-developers/
 
 = Related Links =
+
 
 * [MoneyPress Amazon Edition Product Info](http://www.cybersprocket.com/products/moneypress-amazon-edition/)
 * [MoneyPress Amazon Edition Support Pages](http://redmine.cybersprocket.com/projects/mp-amazon/wiki)
@@ -70,37 +78,22 @@ Learn more at: http://www.cybersprocket.com/services/wordpress-developers/
 None.  Everything you earn through this plugin is yours, we don't siphon off 
 any of your sales or earn anything outside of our one-time license fee.
 
-= Why a license fee? =
+= How can i translate the plugin into my language? =
 
-It helps us support the product and provide regular updates.
+* Find on internet the free program POEDIT, and learn how it works.
+* Use the .pot file located in the languages directory of this plugin to create or update the .po and .mo files.
+* Place these file in the languages subdirectory.
+* If everything is ok, email the files to lobbyjones@cybersprocket.com and we will add them to the next release.
+* For more information on POT files, domains, gettext and i18n have a look at the I18n for WordPress developers Codex page and more specifically at the section about themes and plugins.
 
-= What type of support do I get? =
+= What browsers are supported? =
 
-Cyber Sprocket Labs provides online forums where you can post questions.  The
-developers read the forums on a regular basis.   Most inquiries are responded
-to within 7 days.
+All major browsers should work, however Cyber Sprocket Labs only officially supports the current and prior releases of Internet Explorer, Firefox, Chrome, and Safari.
 
-WordPress plugins are a fun way to share our work with the community, but it is 
-not our main revenue stream.  Please be patient when looking for responses from 
-our dev team.   We want everyone to enjoy using our products, but we must attend 
-to the projects that pay the rent first.  Low cost plugins are fun, and we do 
-want to support them but it can take a week or more to address any issues you
-may be having.
+= What Happened To The LE and Premium Edition =
 
-= Will you customize the plugin for me? =
+We have merged both products into one.  MoneyPress : CafePress Edition now offers complete base functionality for free.   Users can opt to purchase the Pro Pack add-on to get extra features like themes.
 
-If you want a modification and need it in a hurry, contact us for a quote on
-getting this done.  Any work we can re-use and share with the communinty as
-part of main plugin can usually be completed in a few weeks.  We charge $60/hr
-for this work with most projects running 6-10 hours.    If you want a private
-modification we charge $120 for the work.
-
-You can also suggest features or modificaitons in the forum.  We try to release
-new features every few months and get most of our ideas from the forums.
-
-= Are there any other fees? =
-
-No, just the initial license fee.  Upgrades are free.  
 
 = What are the terms of the license? =
 
@@ -109,21 +102,6 @@ wish.  We prefer that our customers pay us because they like what we do and
 want to support our efforts to bring useful software to market.  Learn more
 on our [CSL License Terms page](http://redmine.cybersprocket.com/projects/commercial-products/wiki/Cyber_Sprocket_Labs_Licensing_Terms "CSL License Terms page").
 
-= Who Is Cyber Sprocket Labs? =
-
-Cyber Sprocket Labs is a software consulting firm.  We develop custom complex
-web applications, mobile applications, and desktop applications for our clients.
-If you are looking for help developing and deploying your application, contact
-us for a quote.  Our rates start at $80/hr for long term engagements of 6 months
-or more and $120/hr for short term projects.
-
-= How can i translate the plugin into my language? =
-
-* Find on internet the free program POEDIT, and learn how it works.
-* Use the .pot file located in the languages directory of this plugin to create or update the .po and .mo files.
-* Place these file in the languages subdirectory.
-* If everything is ok, email the files to lobbyjones@cybersprocket.com and we will add them to the next release.
-* For more information on POT files, domains, gettext and i18n have a look at the I18n for WordPress developers Codex page and more specifically at the section about themes and plugins.
 
 == Screenshots ==
 
@@ -133,6 +111,14 @@ or more and $120/hr for short term projects.
 
 
 == Changelog ==
+
+= 0.4 (April 2012) =
+
+* [Pro Pack] New Themes
+* Bug fixes.
+* Performance Updates.
+* Merge LE and Premium Edition.
+* New Pro Pack Add On includes all Premium Edition Features.
 
 = 0.3 (August 2011) =
 
