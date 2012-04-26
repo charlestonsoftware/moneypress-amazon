@@ -119,6 +119,8 @@ on our [CSL License Terms page](http://redmine.cybersprocket.com/projects/commer
 * Performance Updates.
 * Merge LE and Premium Edition.
 * New Pro Pack Add On includes all Premium Edition Features.
+* Style sheet only rendered when shortcode is processed.
+* Fixed missing zoom image on various themes.
 
 = 0.3 (August 2011) =
 
