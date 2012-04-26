@@ -90,6 +90,6 @@ if (class_exists('CafePressPanhandler') === false) {
 
 register_activation_hook( __FILE__, 'csl_mpamz_activate');
 
-add_action('wp_print_styles', 'csl_mpamz_user_stylesheet');
+add_action('wp_footer', 'csl_mpamz_user_stylesheet');
 add_action('admin_print_styles','csl_mpamz_admin_stylesheet');
 add_action('admin_init','csl_mpamz_setup_admin_interface',10);
