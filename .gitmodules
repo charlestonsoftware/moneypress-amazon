@@ -1,3 +1,6 @@
 [submodule "core"]
 	path = core
 	url = ssh://git@cybersprocket.com/home/lobbrary/repos/products/MP-Amazon-core.git
+[submodule "Panhandler"]
+	path = Panhandler
+	url = git@github.com:charlestonsoftware/panhandler.git
