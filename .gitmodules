@@ -4,3 +4,6 @@
 [submodule "Panhandler"]
 	path = Panhandler
 	url = git@github.com:charlestonsoftware/panhandler.git
+[submodule "WPCSL-generic"]
+	path = WPCSL-generic
+	url = git@github.com:charlestonsoftware/WPCSL-generic.git
