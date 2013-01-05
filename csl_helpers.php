@@ -180,8 +180,8 @@ function csl_mpamz_activate() {
  ** Add the admin stylesheets to admin pages.
  **/
 function csl_mpamz_admin_stylesheet() {
-    if ( file_exists(MP_AMZ_COREDIR.'css/admin.css')) {
-        wp_enqueue_style('csl_mpamz_admin_css', MP_AMZ_COREURL .'css/admin.css'); 
+    if ( file_exists(MP_AMZ_PLUGINDIR.'css/admin.css')) {
+        wp_enqueue_style('csl_mpamz_admin_css', MP_AMZ_PLUGINURL .'css/admin.css');
     }  
 }
 

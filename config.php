@@ -22,9 +22,9 @@ if (defined('MP_AMZ_PLUGINDIR')) {
             'css_prefix'            => 'csl_themes',            
             'name'                  => 'MoneyPress : Amazon Edition',
             
-            'url'                   => 'http://www.cybersprocket.com/products/moneypress-amazon/',
-            'support_url'           => 'http://redmine.cybersprocket.com/projects/moneypress-amazon/wiki',
-            'purchase_url'          => 'http://www.cybersprocket.com/products/moneypress-amazon/',
+            'url'                   => 'http://www.charlestonsw.com/product/moneypress-amazon-pro-pack/',
+            'support_url'           => 'http://wordpress.org/support/plugin/moneypress-amazone-le',
+            'purchase_url'          => 'http://www.charlestonsw.com/product/moneypress-amazon-pro-pack/',
             
             'basefile'              => MP_AMZ_BASENAME,
             'plugin_path'           => MP_AMZ_PLUGINDIR,
@@ -76,11 +76,11 @@ function configure_mpamz_propack() {
             array(
                 'name'              => 'Pro Pack',
                 'help_text'         => 'A variety of enhancements are provided with this package.  ' .
-                                       'See the <a href="'.$MP_amz_plugin->purchase_url.'" target="Cyber Sprocket">product page</a> for details.  If you purchased this add-on ' .
+                                       'See the <a href="'.$MP_amz_plugin->purchase_url.'" target="CSA">product page</a> for details.  If you purchased this add-on ' .
                                        'come back to this page to enter the license key to activate the new features.',
                 'sku'               => 'MPAMZ',
-                'paypal_button_id'  => 'LUJK7AZN7MRDJ',
-                'paypal_upgrade_button_id' => 'LUJK7AZN7MRDJ'
+                'paypal_button_id'  => '8Q3VRGUAHUZGU',
+                'paypal_upgrade_button_id' => '8Q3VRGUAHUZGU'
             )
         );
     

@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: MoneyPress Amazon Edition
-Plugin URI: http://www.cybersprocket.com/products/moneypress-amazon/
+Plugin URI: http://www.charlestonsw.com/product/moneypress-amazon/
 Description: Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.     
-Version: 0.4
-Author: Cyber Sprocket Labs
-Author URI: http://www.cybersprocket.com
+Version: 0.6
+Author: Charleston Software Associates
+Author URI: http://www.charlestonsw.com
 License: GPL3
 
-Copyright 2012 Cyber Sprocket Labs (info@cybersprocket.com)
+Copyright 2013 CCA (info@charlestonsw.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -31,9 +31,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 if (defined('MP_AMZ_PLUGINDIR') === false) {
     define('MP_AMZ_PLUGINDIR', plugin_dir_path(__FILE__));
 }
-if (defined('MP_AMZ_COREDIR') === false) {
-    define('MP_AMZ_COREDIR', MP_AMZ_PLUGINDIR . 'core/');
-}
 if (defined('MP_AMZ_ICONDIR') === false) {
     define('MP_AMZ_ICONDIR', MP_AMZ_COREDIR . 'images/icons/');
 }
@@ -42,9 +39,6 @@ if (defined('MP_AMZ_ICONDIR') === false) {
 //
 if (defined('MP_AMZ_PLUGINURL') === false) {
     define('MP_AMZ_PLUGINURL', plugins_url('',__FILE__));
-}
-if (defined('MP_AMZ_COREURL') === false) {
-    define('MP_AMZ_COREURL', MP_AMZ_PLUGINURL . '/core/');
 }
 if (defined('MP_AMZ_ICONURL') === false) {
     define('MP_AMZ_ICONURL', MP_AMZ_COREURL . 'images/icons/');
@@ -66,9 +60,9 @@ if (defined('MP_AMZ_PREFIX') === false) {
 
 // Include our needed files
 //
-include_once(MP_AMZ_PLUGINDIR.'/include/config.php');
+include_once(MP_AMZ_PLUGINDIR.'/config.php');
 include_once(MP_AMZ_PLUGINDIR . 'plus.php'   );
-include_once(MP_AMZ_COREDIR   . 'csl_helpers.php'       );
+include_once(MP_AMZ_PLUGINDIR   . 'csl_helpers.php'       );
 if (class_exists('PanhandlerProduct') === false) {
     try {
         require_once('Panhandler/Panhandler.php');
