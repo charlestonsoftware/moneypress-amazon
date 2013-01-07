@@ -91,6 +91,6 @@ function configure_mpamz_propack() {
              // Enable Themes
              //
              $MP_amz_plugin->themes_enabled = true;
-             $MP_amz_plugin->themes->css_dir = MP_AMZ_PLUGINDIR . 'css/';
+             $MP_amz_plugin->themes->css_dir = MP_AMZ_PLUGINDIR . '/css/';
     }        
 }
