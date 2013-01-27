@@ -34,6 +34,7 @@ if (defined('MP_AMZ_PLUGINDIR')) {
             'driver_name'           => 'Amazon',
             'driver_type'           => 'Panhandler',
             'driver_args'           => array(
+                    'debugging'            => (get_option('mpamz-debugging')==='on'),
                     'secret_access_key'   => get_option(MP_AMZ_PREFIX.'-secret_access_key'),
                     'wait_for'            => get_option(MP_AMZ_PREFIX.'-wait_for'),
                     'AWSAccessKeyId'      => get_option(MP_AMZ_PREFIX.'-AWSAccessKeyId'),
