@@ -92,7 +92,7 @@ function csl_mpamz_setup_admin_interface() {
         'amazon_site', 'list', false, 
         $hint,
         array(
-            'Worldwide' =>  'aws.amazonaws.com/onca/xml',
+            'Worldwide' =>  'webservices.amazon.com',
             )
     );
     
