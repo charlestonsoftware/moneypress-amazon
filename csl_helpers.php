@@ -86,18 +86,13 @@ function csl_mpamz_setup_admin_interface() {
         
     
     $label      = __('Amazon Site',MP_AMZ_PREFIX);
-    $hint       = __('Select the Amazon site to pull data from.',MP_AMZ_PREFIX);
+    $hint       = __('All Amazon requests come from the same place now.',MP_AMZ_PREFIX);
     $MP_amz_plugin->settings->add_item(
         $section,$label, 
         'amazon_site', 'list', false, 
         $hint,
         array(
-            'United States' =>  'ecs.amazonaws.com',
-            'Canada'        =>  'ecs.amazonaws.ca',
-            'Denmark'       =>  'ecs.amazonaws.de',
-            'France'        =>  'ecs.amazonaws.fr',
-            'Japan'         =>  'ecs.amazonaws.jp',
-            'United Kingdom'=>  'ecs.amazonaws.co.uk',
+            'Worldwide' =>  'aws.amazonaws.com/onca/xml',
             )
     );
     
