@@ -8,7 +8,7 @@ Author: Charleston Software Associates
 Author URI: http://www.charlestonsw.com
 License: GPL3
 
-Copyright 2013 CCA (info@charlestonsw.com)
+Copyright 2013 CSA (info@charlestonsw.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

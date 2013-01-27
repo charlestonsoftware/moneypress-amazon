@@ -4,7 +4,7 @@ Contributors: charlestonsw
 Donate link: http://www.charlestonsw.com/product/moneypress-amazon-edition/
 Tags: amazon, store, products, ecommerce, affiliate program, affiliates
 Requires at least: 3.3
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: 0.6
 
 Put Amazon product listings on your posts and pages using a simple short code.  Great for earning affiliate revenue or adding content.    
@@ -154,6 +154,10 @@ Currently this includes:
 
 == Changelog ==
 
+= 0.6 (January 27 2013) =
+
+* Links upated to CSA.
+
 = 0.5 (January 2013) =
 
 * Initial CSA release.
@@ -171,7 +175,7 @@ Currently this includes:
 = 0.3 (August 2011) =
 
 * Added theme files to PLUS version
-* Elminate errors on servers with exec() disabled on php.
+* Eliminate errors on servers with exec() disabled on php.
 
 = 0.2  (April 2011) =
 
