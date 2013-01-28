@@ -2,7 +2,7 @@
 Plugin Name: MoneyPress Amazon Edition
 Contributors: charlestonsw
 Donate link: http://www.charlestonsw.com/product/moneypress-amazon-edition/
-Tags: amazon, store, products, ecommerce, affiliate program, affiliates
+Tags: amazon, store, products, ecommerce, affiliate program, affiliates, amazon affiliate, associates, amazon associate
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 0.6
